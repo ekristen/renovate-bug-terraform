@@ -7,7 +7,7 @@ module "ssh_key_pair" {
 }
 
 module "egress_subnets" {
-  source            = "git::https://github.com/cloudposse/terraform-aws-named-subnets.git?ref=0.9.2"
+  source            = "git::https://github.com/cloudposse/terraform-aws-named-subnets.git?ref=0.12.0"
   subnet_names      = ["egress1"]
   max_subnets       = 1
   vpc_id            = "vpc-blah"
